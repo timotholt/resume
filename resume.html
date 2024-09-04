@@ -1,305 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
 
-        body {
-            background-color: black;
-            padding: 10px 10px 10px 10px;
-        }
+            body {
+                background-color: black;
+                padding: 10px 10px 10px 10px;
+            }
 
-        .resumeContainer {
-            background-color: #202020;
-            color: white;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding: 10px 10px 10px 10px;
-        }
+            .new {
+                background-color: #202020;
+                color: white;
+            }
 
-        .headerContainer {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            padding: 10px 10px 10px 10px;
-        }
+            .sectionContainer {
+                display: flex;
+                flex-direction: row;
+                background-color: #202020;
+                color: white;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px 10px 10px 10px;
+            }
 
-        .profilePic {
-            max-width: 20vh;
-            /* padding: 10px; */
-        }
+            .headerContainer {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                padding: 10px 10px 10px 10px;
+            }
 
-        .nameAndTitle {
-            width: 350px;
-            text-align: left;
-        }
+            .profilePic {
+                max-width: 20vh;
+                /* padding: 10px; */
+            }
 
-        .nameAndTitle h1 {
-            color: white;
-            font-size: 24px;
-            margin: 0px 10px 10px 10px;
-            padding: 0px 0px 0px 0px;
-        }
+            .nameAndTitle {
+                width: 350px;
+                text-align: left;
+            }
 
-        .nameAndTitle h4 {
-            color: cyan;
-            font-size: 12px;
-            margin: 0px 10px 10px 10px;
-            padding: 0px 0px 0px 0px;
-        }
+            .nameAndTitle h1 {
+                color: white;
+                font-size: 24px;
+                margin: 0px 10px 10px 10px;
+                padding: 0px 0px 0px 0px;
+            }
 
-        /* ============= CONTACT INFO =============*/
-        .contactInfoContainer {
-            display: flex;
-            /* flex-wrap: nowrap; */
-            /* justify-content: flex-start; */
-            /* justify-content: space-around; */
-        }
+            .nameAndTitle h4 {
+                color: cyan;
+                font-size: 12px;
+                margin: 0px 10px 10px 10px;
+                padding: 0px 0px 0px 0px;
+            }
 
-        .contactInfo {
-            /* display: flex;
-            flex-direction: row;
-            /* width: 200px; */
-            /* justify-content: flex-start; */
-            /* justify-content: space-evenly; */
-            font-size: 10px;
-        }
+            /* ============= CONTACT INFO =============*/
+            .contactInfoContainer {
+                display: flex;
+                flex-direction: column;
+                justify-items: right;
+            }
 
-        .contactVariable {
-            /* width: 100px; */
-            /* text-align: right; */
-            /* padding-right: 10px; */
-            margin-left: 10px;
-            margin-right: 5px;
-            text-align: right;
-        }
+            .contactRow {
+                display: flex;
+                font-size: 10px;
+                flex-direction: row;
+                width: 300px;
+            }
 
-        .contactValue {
-            margin-left: 5px;
-            margin-right: 10px;
-            text-align: left;
-        }
+            .contactVariable {
+                margin-left: 10px;
+                margin-right: 5px;
+                text-align: right;
+                width: 300px;
+            }
 
-        .bodyContainer {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            padding: 10px 10px 10px 10px;
-        }
+            .contactValue {
+                margin-left: 5px;
+                margin-right: 10px;
+                text-align: left;
+                width: 300px;
+            }
 
-        /* ============= EMPLOYMENT INFO =============*/
+            .bodyContainer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                padding: 10px 10px 10px 10px;
+            }
 
-        .employmentContainer {
-            display: flex;
-            width: 500px;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            /* flex-direction: column; */
-            /* flex-wrap: nowrap; */
-            /* align-items: flex-start; */
-            /* padding: 10px 10px 10px 10px; */
-        }
-        
-        .employmentItem {
-            width: 400px;
-            display: flex;
-            flex-wrap: wrap;
-        }
+            /* ============= EMPLOYMENT INFO =============*/
 
-        .employmentYear {
-            width: 30%;
-            color: cyan;
-            text-align: left;
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
+            .employmentContainer {
+                display: flex;
+                width: 500px;
+                flex-direction: column;
+                justify-items: right;
+                /* flex-wrap: nowrap; */
+                /* flex-direction: column; */
+                /* flex-wrap: nowrap; */
+                /* align-items: flex-start; */
+                /* padding: 10px 10px 10px 10px; */
+            }
+            
+            .employmentRow {
+                flex-direction: row;
+                width: 400px;
+                display: flex;
+                flex-wrap: wrap;
+            }
 
-        .employmentDesc {
-            width: 40%;
-            color: white;
-            margin-left: 5px;
-            margin-right: 10px;
-            text-align: left;
-            margin-bottom: 5px;
-        }
+            .employmentYear {
+                width: 30%;
+                color: cyan;
+                text-align: left;
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
 
-        .programmingSkillsContainer {
-            display: flex;
-            flex-wrap: nowrap;
-            font-size: 12px;
-            /* justify-content: flex-start; */
-            /* justify-content: space-around; */
-        }
+            .employmentDesc {
+                width: 60%;
+                color: white;
+                margin-left: 5px;
+                margin-right: 10px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
 
-        /* ============= PROGRAMMING SKILLS =============*/
-        .programmingSkillsItem {
-            color: #AfAfAf;
-            font-size: 11px;
-            width: 140px;
-        }
+            .programmingSkillsContainer {
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: 12px;
+                /* justify-content: flex-start; */
+                /* justify-content: space-around; */
+            }
 
-        .programmingSkillsItem h4 {
-            /* background-color: #404040; */
-            color: #AfAfAf;
-            font-size: 6px;
-        }
+            /* ============= PROGRAMMING SKILLS =============*/
+            .programmingSkillsItem {
+                color: #AfAfAf;
+                font-size: 11px;
+                width: 140px;
+            }
 
-        .programmingSkillsVariable {
-            color: #afafaf;
-            /* background-color: #404040; */
-            margin-bottom: 5px;
-        }
+            .programmingSkillsItem h4 {
+                /* background-color: #404040; */
+                color: #AfAfAf;
+                font-size: 6px;
+            }
 
-        .programmingSkillsBar {
-            background-color: #404040;
-            margin-bottom: 10px;
-            width: 100%;
-            /* max-width: 100px; */
-        }
+            .programmingSkillsVariable {
+                color: #afafaf;
+                /* background-color: #404040; */
+                margin-bottom: 5px;
+            }
 
-        .programmingSkillsValue1 {
-            color: white;
-            background-color: blue;
-            text-align: right;
-            width: 75%;
-        }
+            .programmingSkillsBar {
+                background-color: #404040;
+                margin-bottom: 10px;
+                width: 100%;
+                /* max-width: 100px; */
+            }
 
-        .programmingSkillsValue2 {
-            color: white;
-            background-color: darkgreen;
-            text-align: right;
-            width: 60%;
-        }
+            .programmingSkillsValue1 {
+                color: white;
+                background-color: blue;
+                text-align: right;
+                width: 75%;
+            }
 
-        .programmingSkillsValue3 {
-            color: white;
-            background-color: darkmagenta;
-            text-align: right;
-            width: 70%;
-        }
+            .programmingSkillsValue2 {
+                color: white;
+                background-color: darkgreen;
+                text-align: right;
+                width: 60%;
+            }
 
-        .programmingSkillsValue4 {
-            color: white;
-            background-color: darkslateblue;
-            text-align: right;
-            width: 55%;
-        }
+            .programmingSkillsValue3 {
+                color: white;
+                background-color: darkmagenta;
+                text-align: right;
+                width: 70%;
+            }
 
-        .programmingSkillsValue5 {
-            color: white;
-            background-color: darkslategray;
-            text-align: right;
-            width: 80%;
-        }
+            .programmingSkillsValue4 {
+                color: white;
+                background-color: darkslateblue;
+                text-align: right;
+                width: 55%;
+            }
 
-        /* .graphicSkillsContainer {
-        }
+            .programmingSkillsValue5 {
+                color: white;
+                background-color: darkslategray;
+                text-align: right;
+                width: 80%;
+            }
 
-        .graphicSkillsItem {
-        }
+            /* .graphicSkillsContainer {
+            }
 
-        .graphicSkillsVariable {
-        }
+            .graphicSkillsItem {
+            }
 
-        .graphicSkillsValue {
-        }
+            .graphicSkillsVariable {
+            }
 
-        .languageSkillsContainer {
-        }
+            .graphicSkillsValue {
+            }
 
-        .languageSkillsItem {
-        }
+            .languageSkillsContainer {
+            }
 
-        .languageSkillsVariable {
-        }
+            .languageSkillsItem {
+            }
 
-        .languageSkillsValue {
-        } */
-    </style>
-</head>
+            .languageSkillsVariable {
+            }
 
-<body>
-    <div class="resumeContainer">
-        <div class="headerContainer">
+            .languageSkillsValue {
+            } */
+        </style>
+    </head>
+
+    <body>
+        <div class="sectionContainer">
             <div>
                 <img class="profilePic" src="profilePic.jpg" alt="Tim Otholt">
             </div>
-            <div class="nameAndTitle">
-                <h1>TIMOTHY OTHOLT</h1>
-                <h4>Front End Developer</h4>
-            </div>
-            <div class="contactInfoContainer">
-                <div class="contactInfo">
-                    <div class="contactVariable">
-                        phone:
-                    </div>
-                    <div class="contactVariable">
-                        email:
-                    </div>
-                    <div class="contactVariable">
-                        github:
-                    </div>    
-                </div>
-                <div class="contactInfo">
-                    <div class="contactValue">
-                        (408) 406-1832
-                    </div>
-                    <div class="contactValue">
-                        timotholt@yahoo.com
-                    </div>
-                    <div class="contactValue">
-                        github.com/timotholt
-                    </div>    
+            <div>
+                <div class="nameAndTitle">
+                    <h1>TIMOTHY OTHOLT</h1>
+                    <h4>Front End Developer</h4>
                 </div>
             </div>
+            <div>
+                <div class="contactInfoContainer">
+                    <div class="contactRow">
+                        <div class="contactVariable">
+                            phone:
+                        </div>
+                        <div class="contactValue">
+                            (408) 406-1832
+                        </div>
+                    </div>
+                    <div class="contactRow">
+                        <div class="contactVariable">
+                            email:
+                        </div>
+                        <div class="contactValue">
+                            timotholt@yahoo.com
+                        </div>    
+                    </div>
+                    <div class="contactRow">
+                        <div class="contactVariable">
+                            github: 
+                        </div>
+                        <div class="contactValue">
+                            github.com/timotholt
+                        </div>
+                    </div>
+                    <div class="contactRow">
+                        <div class="contactVariable">
+                            facebook: 
+                        </div>
+                        <div class="contactValue">
+                            facebook.com/timotholt
+                        </div>            
+                    </div>
+                    <div class="contactRow">
+                        <div class="contactVariable">
+                            linkedin: 
+                        </div>
+                        <div class="contactValue">
+                            linkedin.com/timotholt
+                        </div>            
+                    </div>
+                </div>
+            </div>    
         </div>
-        <div class="basicText">
-            Firmware engineer.  Motherboard chipset engineer.  Front End Developer.
+        <div class="sectionContainer">
+            <h4>Firmware engineer.  Motherboard chipset engineer.  Front End Developer.</h4>
         </div>
-        <hr/>
-        <h5>EMPLOYMENT</h5>
-        <div class="bodyContainer">
+        <div class="sectionContainer">
+            <hr width="100%">
+        </div>
+
+        <div class="sectionContainer">
             <div class="employmentContainer">
-                <div class="employmentItem">
-                    <div class="employmentYear">
-                        1999 - 2002
-                    </div>
-                    <div class="employmentDesc">
-                        VM Labs
-                    </div>
-                    <div class="employmentYear">
-                        1996 - 1998
-                    </div>
-                    <div class="employmentDesc">
-                        Metalithic Systems
-                    </div>
-                    <div class="employmentYear">
-                        1994 - 1996
-                    </div>
-                    <div class="employmentDesc">
-                        AMD
-                    </div>
-                    <div class="employmentYear">
-                        1993 - 1994
-                    </div>
-                    <div class="employmentDesc">
-                        Spruce Corporation
-                    </div>
-                    <div class="employmentYear">
-                        1992 - 1993
-                    </div>
-                    <div class="employmentDesc">
-                        Quantum Corporation
-                    </div>
-                    <div class="employmentYear">
-                        1988 - 1992
-                    </div>
-                    <div class="employmentDesc">
-                        Phoenix Technologies
-                    </div>
+                <div class="employmentRow">
+                    <div><h4>Employment</h4></div>
+                </div>
+                <div class="employmentRow">
+                    <div class="employmentYear">1999 - 2002</div>
+                    <div class="employmentDesc">VM Labs</div>
+                    <div class="employmentYear">1996 - 1998</div>
+                    <div class="employmentDesc">Metalithic Systems</div>
+                    <div class="employmentYear">1994 - 1996</div>
+                    <div class="employmentDesc">Advanced Micro Devices</div>
+                    <div class="employmentYear">1993 - 1994</div>
+                    <div class="employmentDesc">Spruce Technologies</div>
+                    <div class="employmentYear">1992 - 1993</div>
+                    <div class="employmentDesc">Quantum Corporation</div>
+                    <div class="employmentYear">1988 - 1992</div>
+                    <div class="employmentDesc">Phoenix Technologies</div>
                 </div>
             </div>
             <div class="programmingSkillsContainer">
@@ -346,25 +353,23 @@
                         </div>
                     </div>    
                 </div>
-            </div>                    
+            </div>
         </div>
-        <hr/>
-        <h5>EDUCATION</h5>
-        <div class="bodyContainer">
+        <div class="sectionContainer">
+            <hr width="100%">
+        </div>
+
+        <div class="sectionContainer">
             <div class="employmentContainer">
-                <div class="employmentItem">
-                    <div class="employmentYear">
-                        2024 - Present
-                    </div>
-                    <div class="employmentDesc">
-                        Per Scholas
-                    </div>
-                    <div class="employmentYear">
-                        1985 - 1988
-                    </div>
-                    <div class="employmentDesc">
-                        University Of Hawaii                    </div>
-                    </div>
+                <div class="employmentRow">
+                    <div><h4>Education</h4></div>
+                </div>
+                <div class="employmentRow">
+                    <div class="employmentYear">2024 - Present</div>
+                    <div class="employmentDesc">Per Scholas</div>
+                    <div class="employmentYear">1985 - 1988</div>
+                    <div class="employmentDesc">University of Hawaii</div>
+                </div>
             </div>
             <div class="programmingSkillsContainer">
                 <div class="programmingSkillsItem">
@@ -410,9 +415,7 @@
                         </div>
                     </div>    
                 </div>
-            </div>                    
+            </div>
         </div>
-    </div>
-</div>    
-</body>
+    </body>
 </html>
