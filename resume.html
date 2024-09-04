@@ -6,9 +6,413 @@
     <title>Document</title>
     <style>
 
+        body {
+            background-color: black;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .resumeContainer {
+            background-color: #202020;
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .profilePic {
+            max-width: 20vh;
+            /* padding: 10px; */
+        }
+
+        .nameAndTitle {
+            width: 350px;
+            text-align: left;
+        }
+
+        .nameAndTitle h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0px 10px 10px 10px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .nameAndTitle h4 {
+            color: cyan;
+            font-size: 12px;
+            margin: 0px 10px 10px 10px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        /* ============= CONTACT INFO =============*/
+        .contactInfoContainer {
+            display: flex;
+            /* flex-wrap: nowrap; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+        }
+
+        .contactInfo {
+            /* display: flex;
+            flex-direction: row;
+            /* width: 200px; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-evenly; */
+            font-size: 10px;
+        }
+
+        .contactVariable {
+            /* width: 100px; */
+            /* text-align: right; */
+            /* padding-right: 10px; */
+            margin-left: 10px;
+            margin-right: 5px;
+            text-align: right;
+        }
+
+        .contactValue {
+            margin-left: 5px;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        .bodyContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 10px 10px 10px 10px;
+        }
+
+        /* ============= EMPLOYMENT INFO =============*/
+
+        .employmentContainer {
+            display: flex;
+            width: 500px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* flex-direction: column; */
+            /* flex-wrap: nowrap; */
+            /* align-items: flex-start; */
+            /* padding: 10px 10px 10px 10px; */
+        }
+        
+        .employmentItem {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .employmentYear {
+            width: 30%;
+            color: cyan;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .employmentDesc {
+            width: 40%;
+            color: white;
+            margin-left: 5px;
+            margin-right: 10px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .programmingSkillsContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 12px;
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+        }
+
+        /* ============= PROGRAMMING SKILLS =============*/
+        .programmingSkillsItem {
+            color: #AfAfAf;
+            font-size: 11px;
+            width: 140px;
+        }
+
+        .programmingSkillsItem h4 {
+            /* background-color: #404040; */
+            color: #AfAfAf;
+            font-size: 6px;
+        }
+
+        .programmingSkillsVariable {
+            color: #afafaf;
+            /* background-color: #404040; */
+            margin-bottom: 5px;
+        }
+
+        .programmingSkillsBar {
+            background-color: #404040;
+            margin-bottom: 10px;
+            width: 100%;
+            /* max-width: 100px; */
+        }
+
+        .programmingSkillsValue1 {
+            color: white;
+            background-color: blue;
+            text-align: right;
+            width: 75%;
+        }
+
+        .programmingSkillsValue2 {
+            color: white;
+            background-color: darkgreen;
+            text-align: right;
+            width: 60%;
+        }
+
+        .programmingSkillsValue3 {
+            color: white;
+            background-color: darkmagenta;
+            text-align: right;
+            width: 70%;
+        }
+
+        .programmingSkillsValue4 {
+            color: white;
+            background-color: darkslateblue;
+            text-align: right;
+            width: 55%;
+        }
+
+        .programmingSkillsValue5 {
+            color: white;
+            background-color: darkslategray;
+            text-align: right;
+            width: 80%;
+        }
+
+        /* .graphicSkillsContainer {
+        }
+
+        .graphicSkillsItem {
+        }
+
+        .graphicSkillsVariable {
+        }
+
+        .graphicSkillsValue {
+        }
+
+        .languageSkillsContainer {
+        }
+
+        .languageSkillsItem {
+        }
+
+        .languageSkillsVariable {
+        }
+
+        .languageSkillsValue {
+        } */
     </style>
 </head>
+
 <body>
-    
+    <div class="resumeContainer">
+        <div class="headerContainer">
+            <div>
+                <img class="profilePic" src="profilePic.jpg" alt="Tim Otholt">
+            </div>
+            <div class="nameAndTitle">
+                <h1>TIMOTHY OTHOLT</h1>
+                <h4>Front End Developer</h4>
+            </div>
+            <div class="contactInfoContainer">
+                <div class="contactInfo">
+                    <div class="contactVariable">
+                        phone:
+                    </div>
+                    <div class="contactVariable">
+                        email:
+                    </div>
+                    <div class="contactVariable">
+                        github:
+                    </div>    
+                </div>
+                <div class="contactInfo">
+                    <div class="contactValue">
+                        (408) 406-1832
+                    </div>
+                    <div class="contactValue">
+                        timotholt@yahoo.com
+                    </div>
+                    <div class="contactValue">
+                        github.com/timotholt
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="basicText">
+            Firmware engineer.  Motherboard chipset engineer.  Front End Developer.
+        </div>
+        <hr/>
+        <h5>EMPLOYMENT</h5>
+        <div class="bodyContainer">
+            <div class="employmentContainer">
+                <div class="employmentItem">
+                    <div class="employmentYear">
+                        1999 - 2002
+                    </div>
+                    <div class="employmentDesc">
+                        VM Labs
+                    </div>
+                    <div class="employmentYear">
+                        1996 - 1998
+                    </div>
+                    <div class="employmentDesc">
+                        Metalithic Systems
+                    </div>
+                    <div class="employmentYear">
+                        1994 - 1996
+                    </div>
+                    <div class="employmentDesc">
+                        AMD
+                    </div>
+                    <div class="employmentYear">
+                        1993 - 1994
+                    </div>
+                    <div class="employmentDesc">
+                        Spruce Corporation
+                    </div>
+                    <div class="employmentYear">
+                        1992 - 1993
+                    </div>
+                    <div class="employmentDesc">
+                        Quantum Corporation
+                    </div>
+                    <div class="employmentYear">
+                        1988 - 1992
+                    </div>
+                    <div class="employmentDesc">
+                        Phoenix Technologies
+                    </div>
+                </div>
+            </div>
+            <div class="programmingSkillsContainer">
+                <div class="programmingSkillsItem">
+                    <h3>Programming Skills</h3>
+                    <div class="programmingSkillsVariable">
+                        Design:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue1">
+                            75%
+                        </div>    
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        HTML:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue2">
+                            60%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        CSS:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue3">
+                            70%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        Javascript:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue4">
+                            55%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        Debugging:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue5">
+                            80%
+                        </div>
+                    </div>    
+                </div>
+            </div>                    
+        </div>
+        <hr/>
+        <h5>EDUCATION</h5>
+        <div class="bodyContainer">
+            <div class="employmentContainer">
+                <div class="employmentItem">
+                    <div class="employmentYear">
+                        2024 - Present
+                    </div>
+                    <div class="employmentDesc">
+                        Per Scholas
+                    </div>
+                    <div class="employmentYear">
+                        1985 - 1988
+                    </div>
+                    <div class="employmentDesc">
+                        University Of Hawaii                    </div>
+                    </div>
+            </div>
+            <div class="programmingSkillsContainer">
+                <div class="programmingSkillsItem">
+                    <h3>Languages</h3>
+                    <div class="programmingSkillsVariable">
+                        x86 Assembly:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue1">
+                            75%
+                        </div>    
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        Embedded C:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue2">
+                            60%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        HTML:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue3">
+                            70%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        Pascal:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue4">
+                            55%
+                        </div>
+                    </div>
+                    <div class="programmingSkillsVariable">
+                        Googlescript:
+                    </div>
+                    <div class="programmingSkillsBar">
+                        <div class="programmingSkillsValue5">
+                            80%
+                        </div>
+                    </div>    
+                </div>
+            </div>                    
+        </div>
+    </div>
+</div>    
 </body>
 </html>
