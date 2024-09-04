@@ -1,0 +1,327 @@
+body {
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.sectionText {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 10px 0px;
+}
+
+.resumetext {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+.new {
+    background-color: #202020;
+    color: white;
+}
+
+.big {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px 10px 10px;
+}
+
+.taglineContainer {
+    /* display: flex; */
+    /* flex-direction: row; */
+    background-color: #202020;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: 10px 10px 10px 10px; */
+    padding: 10px 0px 1px 10px;
+}
+
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 10px 10px 10px;
+}
+
+.profilePic {
+    max-width: 20vh;
+    /* padding: 10px; */
+}
+
+.nameAndTitle {
+    width: 300px;
+    text-align: left;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.nameAndTitle h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.nameAndTitle h4 {
+    color: cyan;
+    font-size: 12px;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* ============= CONTACT INFO =============*/
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: right; */
+}
+
+.contactRow {
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    width: 300px;
+}
+
+.contactVariable {
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: right;
+    width: 75px;
+    /* width: 300px; */
+}
+
+.contactValue {
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: left;
+    width: 100px;
+    /* width: 300px; */
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 10px 10px 10px;
+}
+
+/* ============= EMPLOYMENT INFO =============*/
+
+.employmentContainer {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-items: right;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    /* align-items: flex-start; */
+    /* padding: 10px 10px 10px 10px; */
+}
+
+.employmentRow {
+    flex-direction: row;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.employmentYear {
+    width: 23%;
+    color: cyan;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+}
+
+.employmentDesc {
+    width: 70%;
+    color: white;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.programmingSkillsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+}
+
+/* ============= PROGRAMMING SKILLS =============*/
+.programmingSkillsItem {
+    color: #AfAfAf;
+    font-size: 11px;
+    width: 140px;
+}
+
+.programmingSkillsItem h4 {
+    /* background-color: #404040; */
+    color: #AfAfAf;
+    font-size: 6px;
+}
+
+.programmingSkillsVariable {
+    color: #afafaf;
+    /* background-color: #404040; */
+    margin-bottom: 5px;
+}
+
+.programmingSkillsBar {
+    background-color: #343434;
+    margin-bottom: 10px;
+    width: 100%;
+    /* max-width: 100px; */
+}
+
+.programmingSkillsValue1 {
+    color: white;
+    background-color: blue;
+    text-align: right;
+    width: 75%;
+}
+
+.programmingSkillsValue2 {
+    color: white;
+    background-color: darkgreen;
+    text-align: right;
+    width: 60%;
+}
+
+.programmingSkillsValue3 {
+    color: white;
+    background-color: darkmagenta;
+    text-align: right;
+    width: 70%;
+}
+
+.programmingSkillsValue4 {
+    color: white;
+    background-color: blueviolet;
+    text-align: right;
+    width: 55%;
+}
+
+.programmingSkillsValue5 {
+    color: white;
+    background-color: darkslategray;
+    text-align: right;
+    width: 80%;
+}
+
+.languageSkillsValue1 {
+    color: white;
+    background-color: blue;
+    text-align: right;
+    width: 95%;
+}
+
+.languageSkillsValue2 {
+    color: white;
+    background-color: darkgreen;
+    text-align: right;
+    width: 90%;
+}
+
+.languageSkillsValue3 {
+    color: white;
+    background-color: purple;
+    text-align: right;
+    width: 70%;
+}
+
+.languageSkillsValue4 {
+    color: white;
+    background-color: blueviolet;
+    text-align: right;
+    width: 75%;
+}
+
+.languageSkillsValue5 {
+    color: white;
+    background-color: darkslategray;
+    text-align: right;
+    width: 80%;
+}
+
+
+/* .graphicSkillsContainer {
+}
+
+.graphicSkillsItem {
+}
+
+.graphicSkillsVariable {
+}
+
+.graphicSkillsValue {
+}
+
+.languageSkillsContainer {
+}
+
+.languageSkillsItem {
+}
+
+.languageSkillsVariable {
+}
+*/
+
+.mediaSkillsValue1 {
+    color: white;
+    background-color: blue;
+    text-align: right;
+    width: 100%;
+}
+
+.mediaSkillsValue2 {
+    color: white;
+    background-color: darkgreen;
+    text-align: right;
+    width: 100%;
+}
+
+.mediaSkillsValue3 {
+    color: white;
+    background-color: purple;
+    text-align: right;
+    width: 70%;
+}
+
+.mediaSkillsValue4 {
+    color: white;
+    background-color: blueviolet;
+    text-align: right;
+    width: 65%;
+}
+
+.mediaSkillsValue5 {
+    color: white;
+    background-color: darkslategray;
+    text-align: right;
+    width: 60%;
+}
+
+
