@@ -3,6 +3,10 @@ body {
     padding: 10px 10px 10px 10px;
 }
 
+hr {
+    width: 100%;
+}
+
 .sectionText {
     color: white;
     font-size: 18px;
@@ -73,8 +77,6 @@ a:visited {
     padding: 20px 20px 0px 20px;
 
     /* background-image: url("PHOTOSHOPPED - Interwave EEPROM Code From The Internet.png"); */
-
-
 }
 
 .taglineContainer {
@@ -84,7 +86,7 @@ a:visited {
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px 0px 0px 0px;
-    padding: 10px 0px 1px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .tagline1 {
