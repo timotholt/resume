@@ -193,14 +193,8 @@ a:visited {
 
 .employmentContainer {
     display: flex;
-    /* width: 500px; */
     flex-direction: column;
     justify-items: right;
-    /* flex-wrap: nowrap; */
-    /* flex-direction: column; */
-    /* flex-wrap: nowrap; */
-    /* align-items: flex-start; */
-    /* padding: 10px 10px 10px 10px; */
 }
 
 .employmentRow {
@@ -210,34 +204,32 @@ a:visited {
 }
 
 .employmentYear {
-    min-width: 20%;
-    /* width: 20%; */
-    color: cyan;
-    text-align: justify;
+    width: fit-content;
     margin-bottom: 5px;
-    /* margin-right: 10px; */
     padding-right: 10px;
+
     font-size: 14px;
+    text-align: justify;
     text-wrap: nowrap;
+    color: cyan;
 }
 
 .employmentDesc {
     width: 70%;
-    /* width: fit-content; */
-    text-wrap:wrap;
-    color: white;
-    margin-left: 5px;
     margin-right: 10px;
-    text-align: left;
     margin-bottom: 5px;
+    margin-left: 5px;
+
+    text-align: left;
+    color: white;
+    text-wrap:wrap;
+
 }
 
 .programmingSkillsContainer {
     display: flex;
     flex-wrap: nowrap;
     font-size: 12px;
-    /* justify-content: flex-start; */
-    /* justify-content: space-around; */
 }
 
 /* ============= PROGRESS BAR STUFF =============*/
