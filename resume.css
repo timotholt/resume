@@ -39,7 +39,7 @@ ul li {
 }
 
 .new {
-    background-color: #202020;
+    background-color: #181818;
     color: white;
 }
 
@@ -66,7 +66,7 @@ a:visited {
 .sectionContainer {
     display: flex;
     flex-direction: row;
-    background-color: #202020;
+    background-color: #181818;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px 10px 0px 10px;
@@ -79,7 +79,7 @@ a:visited {
 .taglineContainer {
     /* display: flex; */
     /* flex-direction: row; */
-    background-color: #202020;
+    background-color: #181818;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     /* margin: 10px 10px 10px 10px; */
