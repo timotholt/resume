@@ -60,12 +60,23 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: center;
     color: white;
     padding: 20px 20px 20px 20px;
 }
 
+.secondSectionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0px 20px 20px 20px;
+}
+
 .sectionContainer {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: nowrap;
     color: white;
     padding: 0px 20px 20px 20px;
 }
@@ -151,20 +162,17 @@ a:visited {
 
 /* ============= EMPLOYMENT INFO =============*/
 
-/* .employmentContainer {
+.employmentContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: center;
-} */
+}
 
 .employmentRow {
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
     text-wrap-style: balance;
     flex-wrap: wrap;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .employmentYear {
@@ -177,7 +185,7 @@ a:visited {
 }
 
 .employmentDesc {
-    width: 80%;
+    width: 75%;
     margin-right: 10px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -185,13 +193,14 @@ a:visited {
     text-align: left;
     color: white;
     text-wrap:wrap;
-
 }
 
 .programmingSkillsContainer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     font-size: 12px;
+    padding: 0px 10px 20px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* ============= PROGRESS BAR STUFF =============*/
