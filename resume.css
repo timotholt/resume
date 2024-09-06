@@ -195,14 +195,6 @@ a:visited {
     text-wrap:wrap;
 }
 
-.programmingSkillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    padding: 0px 10px 20px 0px;
-    margin: 0px 0px 0px 0px;
-}
-
 /* ============= PROGRESS BAR STUFF =============*/
 /* .progressBarContainer {
     color: #AFAFAF;
@@ -220,7 +212,28 @@ a:visited {
 
 } */
 
-/* ============= PROGRAMMING SKILLS =============*/
+
+/* Bar Graphs are turned off on screen widths less than 480 pixels */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .programmingSkillsContainer {
+        display: none;
+        flex-wrap: wrap;
+        font-size: 12px;
+        padding: 0px 10px 20px 0px;
+        margin: 0px 0px 0px 0px;
+    }    
+}
+
+@media screen and (min-width: 480px) {
+    .programmingSkillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        padding: 0px 10px 20px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
 .programmingSkillsItem {
     color: #AfAfAf;
     font-size: 11px;
@@ -228,21 +241,18 @@ a:visited {
 }
 
 .programmingSkillsItem h3 {
-    /* background-color: #404040; */
     color: #AfAfAf;
     font-size: 14px;
     margin-top: 0px;
 }
 
 .programmingSkillsItem h4 {
-    /* background-color: #404040; */
     color: #AfAfAf;
     font-size: 6px;
 }
 
 .programmingSkillsVariable {
     color: #afafaf;
-    /* background-color: #404040; */
     margin-bottom: 5px;
 }
 
@@ -250,7 +260,6 @@ a:visited {
     background-color: #343434;
     margin-bottom: 10px;
     width: 100%;
-    /* max-width: 100px; */
 }
 
 /* .programmingSkillsValue1:hover {
