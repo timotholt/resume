@@ -13,7 +13,7 @@ hr {
     background-color: #181818;
 }
 
-.sectionText {
+.sectionHeader {
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -27,9 +27,9 @@ hr {
     margin: 0px 0px 0px 0px;
 }
 
-.companyTitle {
+/* .companyTitle {
     color: #7f7f7f;
-}
+} */
 
 .resumeText {
     color: #a0a0a0;
@@ -46,11 +46,6 @@ ul li {
     margin: 0px 0px 0px 0px;
 }
 
-.new {
-    background-color: #181818;
-    color: white;
-}
-
 a {
     color: cyan;
     text-decoration-color: cyan;
@@ -59,15 +54,6 @@ a {
 a:visited {
     color: cyan;
     text-decoration-color: cyan;
-}
-
-.big {
-    color: white;
-    font-size: 16px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-    /* margin-left: 10px; */
-    padding-bottom: 0px;
 }
 
 .firstSectionContainer {
@@ -102,13 +88,6 @@ a:visited {
     padding: 0px 0px 0px 0px;
 }
 
-.nameAndTitleContainer h4 {
-    color: cyan;
-    font-size: 16px;
-    margin: 0px 10px 10px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
 .title1 {
     color: #00FFFF;
     font-size: 16px;
@@ -139,6 +118,7 @@ a:visited {
 }
 
 /* ============= CONTACT INFO =============*/
+
 .contactInfoContainer {
     display: flex;
     flex-direction: column;
@@ -168,14 +148,6 @@ a:visited {
 }
 
 /* CONTACT INFO END */
-
-.bodyContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 10px 10px 10px 10px;
-}
 
 /* ============= EMPLOYMENT INFO =============*/
 
