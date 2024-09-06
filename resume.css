@@ -1,10 +1,15 @@
 body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
 }
 
 hr {
     width: 100%;
+}
+
+.innerBody {
+    background-color: #181818;
 }
 
 .sectionText {
@@ -27,7 +32,7 @@ hr {
     margin: 0px 0px 0px 0px;
 }
 
-.resumetext {
+.resumeText {
     color: #a0a0a0;
     font-size: 12px;
 }
@@ -57,106 +62,97 @@ a:visited {
     text-decoration-color: cyan;
 }
 
-
 .big {
     color: white;
     font-size: 16px;
     font-weight: bolder;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0px;
     /* margin-left: 10px; */
     padding-bottom: 0px;
 }
 
-.sectionContainer {
+.firstSectionContainer {
     display: flex;
     flex-direction: row;
-    background-color: #181818;
+    flex-wrap: wrap;
+    justify-items:center;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 20px 0px 20px;
-
-    /* background-image: url("PHOTOSHOPPED - Interwave EEPROM Code From The Internet.png"); */
+    padding: 20px 20px 20px 20px;
 }
 
-.taglineContainer {
-    /* display: flex; */
-    /* flex-direction: row; */
-    background-color: #181818;
+.sectionContainer {
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px 0px 0px 0px;
-    padding: 10px 20px 10px 20px;
+    padding: 0px 20px 20px 20px; */
 }
 
-.tagline1 {
-    color: #00FFFF;
-    font-size: 16px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 10px;
-    font-weight: bold;
-}
 
-.tagline2 {
-    color: #008888;
-    font-size: 16px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 10px;
-}
-
-.tagline3 {
-    color: #006666;
-    font-size: 16px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 10px;
-}
-
-.tagline4 {
-    color: #005555;
-    font-size: 16px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 10px;
-}
-
-.headerContainer {
+/* .headerContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 10px 10px 10px 10px;
-}
+} */
 
 .profilePic {
     max-width: 20vh;
-    /* padding: 10px; */
+    margin: 0px 20px 10px 0px;
 }
 
-.nameAndTitle {
-    /* width: 300px; */
+.nameAndTitleContainer {
     text-align: left;
-    padding-right: 0px;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
-.nameAndTitle h1 {
+.nameAndTitleContainer h1 {
     color: white;
     font-size: 24px;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 0px;
     padding: 0px 0px 0px 0px;
 }
 
-.nameAndTitle h4 {
+.nameAndTitleContainer h4 {
     color: cyan;
     font-size: 16px;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 0px;
     padding: 0px 0px 0px 0px;
+}
+
+.title1 {
+    color: #00FFFF;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 0px;
+    font-weight: bold;
+}
+
+.title2 {
+    color: #008888;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 0px;
+}
+
+.title3 {
+    color: #006666;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 0px;
+}
+
+.title4 {
+    color: #005555;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 10px;
 }
 
 /* ============= CONTACT INFO =============*/
 .contactInfoContainer {
     display: flex;
     flex-direction: column;
+    margin: 10px 10px 10px 0px;
 }
 
 .contactRow {
@@ -167,16 +163,18 @@ a:visited {
 }
 
 .contactMethod {
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     text-align: right;
-    width: 75px;
+    text-wrap: nowrap;
+    width: 22%;
 }
 
 .contactValue {
-    margin-left: 5px;
+    margin-left: 0px;
     margin-right: 10px;
     text-align: left;
+    text-wrap: nowrap;
+    width: 60%;
 }
 
 /* CONTACT INFO END */
